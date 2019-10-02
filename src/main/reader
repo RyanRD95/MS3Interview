@@ -1,0 +1,47 @@
+import com.opencsv.CSVReader;
+import java.io.IOException;
+import java.io.Reader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class OpenCSVReader {
+    int count = 0;
+    String csvFilename = "C:\\ms3Interview.csv";
+    CSVReader csvReader = new CSVReader(new FileReader(csvFilename));
+    String[] row = null;
+    int i = 0;
+        while((row =csvReader.readNext())!=null)
+
+    {
+        System.out.println(row[i]
+                + " , ");
+        i++;
+        count++;
+        if i = 6002 {
+        break;
+    }
+    }
+
+    int fail = 0;
+    If row == null
+
+    {
+        java.sql.ResultSet myResultSet = getResultSetFromSomewhere();
+        writer.writeAll(myResultSet, includeHeaders); // puts fail in csv
+
+        fail++;
+
+
+    }
+
+    CSVLoader loader = new CSVLoader(connection);
+    loader.loadCSV("C:\\ms3Inverview.csv", "MS3", false);
+
+    // export rest to db
+    int suc = count - fail; // finds the successful runs
+    Logger logger = Logger.getLogger("MS3Log"); // makes log file
+
+        logger.info("Inputs received #"+count \n
+        "Successes #"+suc \n
+        "Fails #"+fail);
+}
